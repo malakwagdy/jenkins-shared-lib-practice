@@ -2,5 +2,7 @@
 
 def call() {
     echo "Building the JAR file..."
-    sh "mvn clean package"
+    dir('./UMS') {
+        sh "mvn clean package"
+    }
 }
