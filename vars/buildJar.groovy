@@ -2,7 +2,5 @@
 
 def call() {
     echo "Building the JAR file..."
-    dir('./UMS') {
-        sh "mvn clean package"
-    }
+    sh "go build -o my-app main.go"
 }
