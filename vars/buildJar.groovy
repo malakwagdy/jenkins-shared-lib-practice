@@ -1,0 +1,4 @@
+def call() {
+    echo "Building the JAR file..."
+    sh "mvn clean package"
+}
